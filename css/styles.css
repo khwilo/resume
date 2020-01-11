@@ -48,6 +48,7 @@ body {
   position: relative;
   top: -0.7em;
   padding: 0.2em;
+  text-transform: uppercase;
 }
 
 .progress-indicator {
