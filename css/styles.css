@@ -18,19 +18,36 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
-  background-color: var(--light-gray);
+  background-color: var(--white);
   color: var(--black);
 }
 
-.full-name h1 {
-  font-family: 'EB Garamond', serif;
-  font-weight: 700;
-  color: var(--light-teal);
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em;
+}
+
+.field-container {
+  border: 2px solid var(--black);
+}
+
+.field-container > h2 {
+  margin: 0;
+  text-align: center;
 }
 
 .field-container > h2 > span {
   background-color: var(--black);
   color: var(--white);
+  display: inline;
+  border: 1px solid var(--black);
+  position: relative;
+  top: -0.7em;
+  padding: 0.2em;
 }
 
 .progress-indicator {
@@ -48,4 +65,41 @@ body {
 
 .progress-indicator[value]::-moz-progress-bar {
   background-color: var(--black);
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-name h1 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  color: var(--light-teal);
+  margin: 0;
+  font-size: 3em;
+}
+
+.profession {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.contact-info__details {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.contact-info__details > li {
+  text-decoration: underline;
+}
+
+.main {
+  margin-top: 2em;
+}
+
+.main__inner > * + * {
+  margin-top: 2em;
 }
