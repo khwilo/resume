@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500,700|Lato:400,700&display=swap');
+
+:root {
+  box-sizing: border-box;
+  --dark-gray: hsl(56, 32%, 91%);
+  --black: hsl(0, 0%, 17%);
+  --white: hsl(0, 0%, 100%);
+  --light-teal: hsl(171, 24%, 44%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--dark-gray);
+  color: var(--black);
+}
+
+.full-name h1 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  color: var(--light-teal);
+}
+
+.field-container > h2 > span {
+  background-color: var(--black);
+  color: var(--white);
+}
