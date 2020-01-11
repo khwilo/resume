@@ -35,6 +35,10 @@ body {
   border: 2px solid var(--black);
 }
 
+.field-container-skills {
+  border: none;
+}
+
 .field-container > h2 {
   margin: 0;
   text-align: center;
@@ -144,4 +148,28 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.work-skills {
+  display: grid;
+  grid-template-columns: 55% 40%;
+  grid-template-rows: auto;
+  gap: 1em;
+}
+
+.skills__inner {
+  padding: 1em;
+}
+
+.skill-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-type > label {
+  font-weight: 700;
+}
+
+.skill-type > .progress-indicator {
+  align-self: center;
 }
