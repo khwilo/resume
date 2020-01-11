@@ -103,3 +103,8 @@ body {
 .main__inner > * + * {
   margin-top: 2em;
 }
+
+.profile p {
+  margin: 0;
+  padding: 1em 1em 2em;
+}
