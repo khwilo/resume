@@ -2,7 +2,8 @@
 
 :root {
   box-sizing: border-box;
-  --dark-gray: hsl(56, 32%, 91%);
+  --light-gray: hsl(56, 32%, 91%);
+  --dark-gray: hsl(56, 20%, 74%);
   --black: hsl(0, 0%, 17%);
   --white: hsl(0, 0%, 100%);
   --light-teal: hsl(171, 24%, 44%);
@@ -17,7 +18,7 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
-  background-color: var(--dark-gray);
+  background-color: var(--light-gray);
   color: var(--black);
 }
 
@@ -30,4 +31,21 @@ body {
 .field-container > h2 > span {
   background-color: var(--black);
   color: var(--white);
+}
+
+.progress-indicator {
+  height: 2px;
+}
+
+.progress-indicator[value] {
+  border: none;
+  background-color: var(--dark-gray);
+}
+
+.progress-indicator[value]::-webkit-progress-value {
+  background-color: var(--black);
+}
+
+.progress-indicator[value]::-moz-progress-bar {
+  background-color: var(--black);
 }
