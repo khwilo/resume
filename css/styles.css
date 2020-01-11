@@ -108,3 +108,39 @@ body {
   margin: 0;
   padding: 1em 1em 2em;
 }
+
+.education__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  gap: 0.5em;
+}
+
+.school {
+  display: flex;
+  padding: 1em;
+}
+
+.study-years {
+  margin-right: 1em;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.year-gap {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.institution-name h3 {
+  margin: 0;
+}
+
+.institution {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
