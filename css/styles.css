@@ -7,6 +7,8 @@
   --black: hsl(0, 0%, 17%);
   --white: hsl(0, 0%, 100%);
   --light-teal: hsl(171, 24%, 44%);
+
+  font-size: calc(0.5em + 1vw);
 }
 
 *,
@@ -24,7 +26,8 @@ body {
 }
 
 .wrapper {
-  width: 60%;
+  width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   background-color: var(--light-gray);
   display: flex;
@@ -32,12 +35,21 @@ body {
   padding: 1em 2em;
 }
 
+@media (min-width: 55em) {
+  .wrapper {
+    width: 60%;
+    font-size: 0.7rem;
+  }
+}
+
 .field-container {
   border: 2px solid var(--black);
 }
 
-.field-container-skills {
-  border: none;
+@media (min-width: 45em) {
+  .field-container-skills {
+    border: none;
+  }
 }
 
 .field-container > h2 {
@@ -99,11 +111,25 @@ body {
   display: flex;
   list-style-type: none;
   padding: 0;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (min-width: 45em) {
+  .contact-info__details {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .contact-info__details > li {
   text-decoration: underline;
+  padding: 0.5em 0;
+}
+
+@media (min-width: 45em) {
+  .contact-info__details > li {
+    padding: 0;
+  }
 }
 
 .main {
@@ -119,11 +145,13 @@ body {
   padding: 1em 1em 2em;
 }
 
-.education__inner {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: auto;
-  gap: 0.5em;
+@media (min-width: 45em) {
+  .education__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    gap: 0.5em;
+  }
 }
 
 .school {
@@ -155,11 +183,13 @@ body {
   justify-content: center;
 }
 
-.work-skills {
-  display: grid;
-  grid-template-columns: 55% 40%;
-  grid-template-rows: auto;
-  gap: 1em;
+@media (min-width: 45em) {
+  .work-skills {
+    display: grid;
+    grid-template-columns: 55% 40%;
+    grid-template-rows: auto;
+    gap: 1em;
+  }
 }
 
 .work {
@@ -182,6 +212,16 @@ body {
   padding-top: 1em;
 }
 
+.skills {
+  margin-top: 2em;
+}
+
+@media (min-width: 45em) {
+  .skills {
+    margin-top: 0;
+  }
+}
+
 .skills__inner {
   padding: 1em;
 }
@@ -189,7 +229,7 @@ body {
 .skill-type {
   display: flex;
   justify-content: space-between;
-  padding: 0.5em;
+  padding: 0.5em 0;
 }
 
 .skill-type > label {
